@@ -2,6 +2,9 @@ package org.d3if3151.pt2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,11 +33,27 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
+                Database db = new Database(getApplicationContext(), "MindEase", null, 1);
                 if(username.length()==0 || password.length()==0){
-                    Toast.makeText(getApplicationContext(), "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Please fill Username and Password", Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
+                    if(db.login(username,password)==1) {
+                        Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
+                        SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.apply();
+                        startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Invalid Username or Password", Toast.LENGTH_SHORT).show();
+                    }
                 }
+            }
+        });
+
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
     }

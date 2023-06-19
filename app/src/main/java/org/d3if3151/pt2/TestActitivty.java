@@ -18,8 +18,22 @@ public class TestActitivty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_actitivty);
 
-        Button nextButton = findViewById(R.id.nextLT);
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        choices1 = findViewById(R.id.choices1);
+        choices2 = findViewById(R.id.choices2);
+        choices3 = findViewById(R.id.choices3);
+        choices4 = findViewById(R.id.choices4);
+        choices5 = findViewById(R.id.choices5);
+
+        Button BackLabTest = findViewById(R.id.backLT);
+        BackLabTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestActitivty.this, HomeActivity.class));
+            }
+        });
+
+        Button NextLabTest = findViewById(R.id.nextLT);
+        NextLabTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Get the selected answers
@@ -44,28 +58,6 @@ public class TestActitivty extends AppCompatActivity {
                 intent.putExtra("answer4", radioButton4.getText().toString());
                 intent.putExtra("answer5", radioButton5.getText().toString());
                 startActivity(intent);
-            }
-        });
-
-        choices1 = findViewById(R.id.choices1);
-        choices2 = findViewById(R.id.choices2);
-        choices3 = findViewById(R.id.choices3);
-        choices4 = findViewById(R.id.choices4);
-        choices5 = findViewById(R.id.choices5);
-
-        Button BackLabTest = findViewById(R.id.backLT);
-        BackLabTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(TestActitivty.this,HomeActivity.class));
-            }
-        });
-
-        Button NextLabTest = findViewById(R.id.nextLT);
-        NextLabTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(TestActitivty.this,TestResultActivity.class));
             }
         });
     }

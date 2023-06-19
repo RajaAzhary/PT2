@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mental Health Counsellor"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/yellowLight"
                     />
             </LinearLayout>
@@ -105,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Counselling Psychology"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/yellowLight"
                     />
             </LinearLayout>
@@ -139,7 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Psychotherapy"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/yellowLight"
                    />
             </LinearLayout>
@@ -173,7 +173,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Clinical Theraphy"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/yellowLight"
                     />
             </LinearLayout>
@@ -207,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rehabilitation"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/yellowLight"
                     />
             </LinearLayout>
@@ -241,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BACK"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/yellowLight"
                     />
             </LinearLayout>

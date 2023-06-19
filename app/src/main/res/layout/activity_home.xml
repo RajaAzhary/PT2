@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TEST"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     />
             </LinearLayout>
@@ -91,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BUY MEDICINE"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/colorRed"
                    />
             </LinearLayout>
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FIND COUNSELLOR"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/colorRed"
                    />
             </LinearLayout>
@@ -159,7 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="HEALTH ARTICLES"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/colorRed"
                    />
             </LinearLayout>
@@ -193,7 +193,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ORDER DETAILS"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/colorRed" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -226,7 +226,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="EXIT"
-                    android:textAllignment="center"
+                    android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     />
             </LinearLayout>
